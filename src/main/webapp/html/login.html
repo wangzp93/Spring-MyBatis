@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>欢迎登录</title>
+</head>
+<body>
+    登陆了
+
+<script src="../js/lib/jquery-1.12.4.min.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+	var url = "localhost:8060/wechat/getInfo.do";
+	$.ajax({
+		url: url,
+		data: {},
+		type: "POST",
+		datatype: "json",
+		async: true,
+		success: function(res) {
+			alert(res);
+		}
+	});
+</script>
+</body>
+</html>
